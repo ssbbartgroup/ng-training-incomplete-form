@@ -1,4 +1,4 @@
-import { Component, ViewChild, ElementRef} from '@angular/core';
+import { Component } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { Title } from '@angular/platform-browser';
 import { NgClass } from '@angular/common';
