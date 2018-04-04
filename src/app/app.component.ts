@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 
 export class AppComponent {
   title = 'Incomplete Angular Form';
-  subtitle = 'Please make this form accessible';
+  subtitle = 'Please make this page, form, and error messages accessible. Do not forget to implement focus management.';
   likeCounter = 12;
   ariaLiveAnnouncement = '';
 
