@@ -7,8 +7,8 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent {
-  title = 'Angular Form';
-  subtitle = 'Example with good accessibility';
+  title = 'Incomplete Angular Form';
+  subtitle = 'Please make this form accessible';
   likeCounter = 12;
   ariaLiveAnnouncement = '';
 

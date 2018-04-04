@@ -1,7 +1,7 @@
 <div class="container">
   <header class="header">
     <a ng-href="#main" href="#main">
-      <img src="assets/images/Level-Access-Logo.png" id="la-logo" alt="Level Access">
+      <img src="assets/images/Level-Access-Logo.png" id="la-logo">
     </a>
   </header>
   <main class="main" id="main">
@@ -10,12 +10,10 @@
     </h1>
     <div id="like-container">
         <button type="button" id="like-button" class="btn btn-primary" (click)="addToCounter()">
-            <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
-            <span class="sr-only">Like Us</span>
+            <span class="glyphicon glyphicon-thumbs-up"></span>
         </button>
         <span id="like-count">
              {{likeCounter}}
-             <span class="sr-only">Current Likes</span>
         </span>
     </div>
     <div class="row">
@@ -28,4 +26,3 @@
     <p>Copyright © 2018 Level Access. All Rights Reserved.</p>
   </footer>
 </div>
-<span  role="status"  aria-atomic="true" aria-live="polite" class="sr-only" id="aria-live-reader-container">{{ariaLiveAnnouncement}}</span>

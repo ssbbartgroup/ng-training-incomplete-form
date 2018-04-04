@@ -15,10 +15,6 @@ export class FormValidationComponent {
   hasError: boolean;
   titleService: Title;
   originalPageTitle: String;
-  @ViewChild('errorHeading') errorHeading:ElementRef;
-  @ViewChild('messageHeading') messageHeading:ElementRef;
-  @ViewChild('errorList') errorList:ElementRef;
-  
 
   constructor(fb: FormBuilder, titleService: Title) {
     this.showMessage = false;
@@ -55,7 +51,6 @@ export class FormValidationComponent {
       
       //Focus the success message
       setTimeout(() => {
-        this.messageHeading.nativeElement.focus();
       }, 0);
 
     } else {
@@ -64,7 +59,6 @@ export class FormValidationComponent {
       this.hasError = true;
       
       //Focus the error state heading
-      this.errorHeading.nativeElement.focus();
 
       // Update page title to indicate there are errors on the page
       this.titleService.setTitle('Error - ' + this.originalPageTitle );
